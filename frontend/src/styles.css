@@ -27,9 +27,18 @@ body{
   margin: 0px;
   padding: 0px;
   background-color: var(--primary-color);
+  background-image: url("/assets/img/background/background.png");
+  background-repeat: no-repeat;
+
 }
 
 a{
   text-decoration: none;
 }
+
+ul{
+  list-style: none;
+}
+
+
 
