@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { InfoService } from 'src/app/services/info.service';
+import { Info } from 'src/app/shared/models/info';
 
 @Component({
   selector: 'app-readme',
@@ -6,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./readme.component.css']
 })
 export class ReadmeComponent {
+
+  infos: Info[] = [];
+  constructor(private infoService:InfoService){
+    this.infos = infoService.getAll();
+  }
 
 }

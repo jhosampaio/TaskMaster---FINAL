@@ -4,21 +4,21 @@
       <img src="../assets/img/logo/logo.jpg" alt="">
     </div>
     <div class="slogan">
-      <h1>TaskMaster: Gerencie com maestria!!!</h1>
+      <h1>Gerencie com maestria!!!</h1>
     </div>
   </aside>
-  <div class="message">
-    <div class="description-home">
-    <p>📌 A proposta do TaskMaster é proporcionar a você uma ferramenta eficiente e flexível para o gerenciamento de tarefas, permitindo que você se concentre no que é mais importante e alcance uma produtividade máxima.</p>
-    </div>
-  </div>
+  <ul class="message">
+    <li *ngFor="let info of infos">
+    <p>📌{{info.info_home}}</p>
+    </li>
+  </ul>
   <div class="links">
     <ul>
       <li>
         <a routerLink="description">📋 Descrição do projeto</a>
       </li>
       <li>
-        <a routerLink="readme">💻 Tecnologias e ferramentas utilizadas</a>
+        <a routerLink="readme">🧪 Tecnologias e ferramentas utilizadas</a>
       </li>
       <li>
         <a routerLink="about">🎓 Sobre o desenvolvedor</a>

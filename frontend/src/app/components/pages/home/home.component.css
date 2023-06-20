@@ -1,7 +1,9 @@
 .content{
   display: flex;
   align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
+  
 }
 
 aside{
@@ -19,34 +21,41 @@ img{
   margin: 10px;
 }
 
+.slogan{
+  display: flex;
+  justify-content: center;
+}
+
 .slogan>h1{
   color: var(--white-color);
   font-weight: bold;
   font-size: 20px;
 }
 
-.description-home{
+.message{
   width: 300px;
   margin: 20px;
 
 }
 
-.description-home > p{
+.message > li > p{
   color: var(--white-color);
   font-weight: bold;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .links{
   display: flex;
   align-items: center;
-  margin: 10px;
+}
+
+.links > ul > li{
+  margin-bottom: 10px;
 }
 
  a{
   color: var(--white-color);
   font-size: 15px;
-  font-style: bold;
   font-weight: bold;
   cursor: pointer;
 }

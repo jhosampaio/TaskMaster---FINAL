@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { InformationService } from 'src/app/services/information.service';
-import { TaskService } from 'src/app/services/task.service';
-import { Information } from 'src/app/shared/models/Information';
-import { Task } from 'src/app/shared/models/Task';
+import { InfoService } from 'src/app/services/info.service';
+import { Info } from 'src/app/shared/models/info';
+
 
 @Component({
   selector: 'app-home',
@@ -11,15 +10,9 @@ import { Task } from 'src/app/shared/models/Task';
 })
 export class HomeComponent implements OnInit{
 
-  tasks:Task[] = [];
-  informations:Information[] = [];
-  taskService: Task[];
-  constructor(
-    private informationService:InformationService,
-    private TaskService:TaskService){
-
-    this.informations = informationService.getAll();
-    this.taskService = TaskService.getAll();
+  infos: Info[] = [];
+  constructor(private infoService:InfoService){
+    this.infos = infoService.getAll();
   }
   ngOnInit(): void {
   }
