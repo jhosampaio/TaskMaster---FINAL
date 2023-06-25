@@ -1,0 +1,44 @@
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+
+}.content > h1{
+  font-size: 20px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.error-list{
+  color: red;
+}
+
+label {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.input-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+
+}
+
+.input-container input::placeholder {
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
