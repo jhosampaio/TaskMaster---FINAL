@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AddEditTaskComponent } from './components/pages/add-edit-task/add-edit-task.component';
 import { TasksComponent } from './components/pages/tasks/tasks.component';
 import { ProfileComponent } from './components/pages/profile/profile.component';
+import { RegisterComponent } from './components/pages/register/register.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { ProfileComponent } from './components/pages/profile/profile.component';
     ContactComponent,
     AddEditTaskComponent,
     TasksComponent,
-    ProfileComponent
+    ProfileComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

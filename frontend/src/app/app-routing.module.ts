@@ -8,6 +8,7 @@ import { ReadmeComponent } from './components/pages/readme/readme.component';
 import { TasksComponent } from './components/pages/tasks/tasks.component';
 import { AddEditTaskComponent } from './components/pages/add-edit-task/add-edit-task.component';
 import { ProfileComponent } from './components/pages/profile/profile.component';
+import { RegisterComponent } from './components/pages/register/register.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'tasks', component: TasksComponent},
   {path: 'add-edit', component: AddEditTaskComponent},
   {path: 'profile', component: ProfileComponent},
+  {path: 'register', component: RegisterComponent}
 ];
 
 @NgModule({
