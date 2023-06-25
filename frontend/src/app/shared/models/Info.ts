@@ -3,5 +3,4 @@ export class Info{
   info_about!: string;
   info_des!: string;
   info_tech!: string[];
-
  }

@@ -1,5 +1,6 @@
 
 import { Info } from './app/shared/models/info';
+import { Task } from './app/shared/models/Task'
 
 export const sample_infos: Info[] = [
   {
@@ -9,4 +10,38 @@ export const sample_infos: Info[] = [
   info_tech: ['NodeJS', 'Express', 'Angular', 'MongoDB']
 
   }
+]
+
+export const sample_tasks: Task[] = [
+  {
+    id: '1',
+    name: 'Lavar roupa',
+    status:'Concluida'
+  },
+  {
+    id: '2',
+    name: 'Lavar louça',
+    status:'Em andamento'
+  },
+  {
+    id: '3',
+    name: 'Retirar lixo',
+    status:'Pendente'
+  },
+  {
+    id: '4',
+    name: 'Pagar conta de luz',
+    status:'Concluida'
+  },
+  {
+    id: '4',
+    name: 'Pagar conta de luz',
+    status:'Concluida'
+  },
+  {
+    id: '4',
+    name: 'Pagar conta de luz',
+    status:'Concluida'
+  },
+
 ]
