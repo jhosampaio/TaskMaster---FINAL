@@ -94,3 +94,21 @@ label {
   align-items: center;
 }
 
+.btn-login {
+  background: var(--color-gray);
+  color: var(--terciary-color);
+  font-size: 16px;
+  font-weight: bold;
+  padding: 1px;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  width: 100px;
+  border-radius: 5px;
+}
+
+.btn-login:hover{
+  background-color: var(--terciary-color);
+  color: var(--white-color);
+}
+
