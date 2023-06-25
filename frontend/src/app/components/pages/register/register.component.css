@@ -1,0 +1,35 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 3rem;
+}
+
+.details{
+  width: 25rem;
+}
+
+.login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-register {
+  background: var(--color-gray);
+  color: var(--terciary-color);
+  font-size: 16px;
+  font-weight: bold;
+  padding: 1px;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  width: 100px;
+  border-radius: 5px;
+}
+
+.btn-register:hover{
+  background-color: var(--terciary-color);
+  color: var(--white-color);
+}

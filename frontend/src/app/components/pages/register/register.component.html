@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="details">
+    <!-- <app-title title="Register"></app-title> -->
+    <form [formGroup]="registerForm" (ngSubmit)="submit()">
+
+
+
+      <div class="button">
+        <button class="btn-register" type="submit">Login</button>
+      </div>
+
+      <div class="login">
+        Já tem conta? &nbsp;
+        <a routerLink="/login">
+          Login aqui!
+        </a>
+      </div>
+
+
+    </form>
+  </div>
+</div>
