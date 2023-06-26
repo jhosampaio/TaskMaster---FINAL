@@ -16,32 +16,32 @@ export const sample_tasks: Task[] = [
   {
     id: '1',
     name: 'Lavar roupa',
-    status:'Concluida'
+    descricao:'Concluida'
   },
   {
     id: '2',
     name: 'Lavar louça',
-    status:'Em andamento'
+    descricao:'Em andamento'
   },
   {
     id: '3',
     name: 'Retirar lixo',
-    status:'Pendente'
+    descricao:'Pendente'
   },
   {
     id: '4',
     name: 'Pagar conta de luz',
-    status:'Concluida'
+    descricao:'Concluida'
   },
   {
     id: '4',
     name: 'Pagar conta de luz',
-    status:'Concluida'
+    descricao:'Concluida'
   },
   {
     id: '4',
     name: 'Pagar conta de luz',
-    status:'Concluida'
+    descricao:'Concluida'
   },
 
 ]
