@@ -2,6 +2,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Define a altura da página inteira */
-
+  height: 100vh; 
 }
