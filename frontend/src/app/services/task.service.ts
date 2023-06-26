@@ -12,4 +12,8 @@ export class TaskService {
   getAll():Task[]{
     return sample_tasks;
   }
+
+  getTaskById(taskId:string):Task{
+    return this.getAll().find(task => task.id == taskId) ?? new Task();
+  }
 }

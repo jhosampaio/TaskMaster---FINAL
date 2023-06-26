@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/partials/header/header.component';
 import { FooterComponent } from './components/partials/footer/footer.component';
@@ -16,6 +16,8 @@ import { AddEditTaskComponent } from './components/pages/add-edit-task/add-edit-
 import { TasksComponent } from './components/pages/tasks/tasks.component';
 import { ProfileComponent } from './components/pages/profile/profile.component';
 import { RegisterComponent } from './components/pages/register/register.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { TaskPageComponent } from './components/task-page/task-page.component';
 
 
 @NgModule({
@@ -31,12 +33,15 @@ import { RegisterComponent } from './components/pages/register/register.componen
     AddEditTaskComponent,
     TasksComponent,
     ProfileComponent,
-    RegisterComponent
+    RegisterComponent,
+    TaskPageComponent
+
   ],
   imports: [
+
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule, FormsModule, ReactiveFormsModule,
+    HttpClientModule, FormsModule, ReactiveFormsModule, MatFormFieldModule
 
   ],
   providers: [],
