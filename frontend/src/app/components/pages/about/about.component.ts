@@ -9,9 +9,22 @@ import { Info } from 'src/app/shared/models/info';
 })
 export class AboutComponent {
 
-  infos: Info[] = [];
-  constructor(private infoService:InfoService){
-    this.infos = infoService.getAll();
+  infos: Array<any> = new Array();;
+
+  constructor
+    (private infoService: InfoService){
+    // this.infos = infoService.getAll();
+  }
+  ngOnInit(): void {
+    this.getAll();
+  }
+
+  getAll(){
+    this.infoService.getAll().subscribe((infos: any) => {
+
+    }, (err: any) => {
+      console.log('Erro ao listar', err);
+    })
   }
 
 }

@@ -11,33 +11,6 @@
     <li *ngFor="let info of infos">
     <p>📌{{info.info_home}}</p>
     </li>
-    <form>
-      <div class="input-container">
-        <label>Email</label>
-        <div>
-          <input type="email" placeholder="Email" formControlName="email"/>
-        </div>
-        <div class="error-list" *ngIf="isSubmitted">
-          <!-- <div *ngIf="fc.email.errors.required">E-mail obrigatorio</div>
-          <div *ngIf="fc.email.errors.email">Email está errado/div> -->
-        </div>
-      </div>
-
-      <div class="input-container">
-        <label>Password</label>
-        <div>
-          <input type="password" placeholder="Password"
-          formControlName="password"/>
-        </div>
-        <div class="error-list" *ngIf="isSubmitted">
-          <!-- <div *ngIf="fc.password.errors.required">Should not be empty</div> -->
-        </div>
-      </div>
-
-      <div class="button">
-        <button class="btn-login" type="submit">Login</button>
-      </div>
-      </form>
   </ul>
   <div class="links">
     <ul>

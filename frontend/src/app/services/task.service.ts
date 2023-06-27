@@ -7,7 +7,7 @@ import { sample_tasks } from 'src/data';
 })
 export class TaskService {
 
-  constructor() { }
+  //constructor(private http.HttpClient) { }
 
   getAll():Task[]{
     return sample_tasks;

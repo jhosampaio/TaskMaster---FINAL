@@ -1,15 +1,18 @@
 import { Injectable } from '@angular/core';
 import { Info } from '../shared/models/info';
 import { sample_infos } from 'src/data';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs/internal/Observable';
+import { HOME_URL } from '../shared/constants/urls';
 
 @Injectable({
   providedIn: 'root'
 })
 export class InfoService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
-  getAll():Info[]{
-    return sample_infos;
+  getAll(): Observable<any>{
+    return this.http.get(HOME_URL);
   }
 }

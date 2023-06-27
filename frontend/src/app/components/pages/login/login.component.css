@@ -47,7 +47,7 @@ button {
   align-items: center;
 }
 
-.btn-send {
+.btn-login {
   background: var(--color-gray);
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -61,8 +61,7 @@ button {
   text-align: center;
 }
 
-.btn-send:hover{
+.btn-login:hover{
   background-color: var(--terciary-color);
   color: var(--white-color);
 }
-

@@ -10,6 +10,7 @@ import { AddEditTaskComponent } from './components/pages/add-edit-task/add-edit-
 import { ProfileComponent } from './components/pages/profile/profile.component';
 import { RegisterComponent } from './components/pages/register/register.component';
 import { TaskPageComponent } from './components/task-page/task-page.component';
+import { LoginComponent } from './components/pages/login/login.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path: 'tasks', component: TasksComponent},
   {path: 'task/:id', component: TaskPageComponent},
   {path: 'add-edit', component: AddEditTaskComponent},
+  {path: 'login', component: LoginComponent},
   {path: 'profile', component: ProfileComponent},
   {path: 'register', component: RegisterComponent}
 ];
