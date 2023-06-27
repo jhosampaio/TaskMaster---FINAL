@@ -11,22 +11,13 @@ import { Info } from 'src/app/shared/models/info';
 })
 export class HomeComponent implements OnInit{
 
-  infos: Array<any> = new Array();;
+  infos: Info[] = [];
 
   constructor
-    (private infoService: InfoService){
-    // this.infos = infoService.getAll();
+    (private infoService:InfoService){
+    this.infos = infoService.getAll();
   }
   ngOnInit(): void {
-    this.getAll();
-  }
 
-  getAll(){
-    this.infoService.getAll().subscribe((infos: any) => {
-      this.getAll = this.getAll;
-
-    }, (err: any) => {
-      console.log('Erro ao listar', err);
-    })
   }
 }
