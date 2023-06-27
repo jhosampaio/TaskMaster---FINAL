@@ -6,7 +6,7 @@ import { ContactComponent } from './components/pages/contact/contact.component';
 import { DescriptionComponent } from './components/pages/description/description.component';
 import { ReadmeComponent } from './components/pages/readme/readme.component';
 import { TasksComponent } from './components/pages/tasks/tasks.component';
-import { AddEditTaskComponent } from './components/pages/add-edit-task/add-edit-task.component';
+import { AddEditTaskComponent } from './components/pages/addedittask/addedittask.component';
 import { ProfileComponent } from './components/pages/profile/profile.component';
 import { RegisterComponent } from './components/pages/register/register.component';
 import { TaskPageComponent } from './components/task-page/task-page.component';

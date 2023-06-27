@@ -1,0 +1,20 @@
+<div class="content">
+  <div class="details">
+    <h1>➡️ Adicionar/Editar</h1>
+    <form  #contatoForm="ngForm">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome"  required>
+
+      <label for="desc">Descricao:</label>
+      <input type="phone" id="phone" name="phone"  required>
+
+      <button class="btn-send" type="submit" [disabled]="contatoForm.invalid">Add/Edit</button>
+
+    </form>
+    <div class="btns">
+      <button class="btn-remove" type="submit" [disabled]="contatoForm.invalid">Remover</button>
+    </div>
+    <div class="btns">
+      <a class="btn-tasks" routerLink="/tasks">Tarefas</a>
+  </div>
+</div>

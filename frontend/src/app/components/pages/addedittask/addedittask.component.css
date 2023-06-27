@@ -66,34 +66,15 @@ button {
   color: var(--white-color);
 }
 
-.btn-remove{
-  background: var(--color-gray);
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-  color: var(--terciary-color);
-  font-size: 16px;
-  font-weight: bold;
-  padding: 5px;
-  display: inline-block;
-  cursor: pointer;
-  text-align: center;
-}
-
-.btn-:hover{
-  background-color: var(--terciary-color);
-  color: var(--white-color);
-}
-
-.btn-task {
+.btn-remove {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--color-gray);
+  background: red;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
-  color: var(--terciary-color);
+  color: white;
   font-size: 16px;
   font-weight: bold;
   padding: 5px;
@@ -102,15 +83,13 @@ button {
   text-align: center;
 }
 
-.btn-task:hover{
-  background-color: var(--terciary-color);
-  color: var(--white-color);
+.btn-remove:hover{
+  background-color: white;
+  color: black;
 }
 
 .btn-tasks{
   display: flex;
-  align-items: center;
-  justify-content: center;
   color: var(--terciary-color);
   font-weight: bold;
   background: var(--color-gray);
@@ -121,4 +100,8 @@ button {
   color: var(--terciary-color);
 }
 
+.btns{
+  display: flex;
+  justify-content: center;
+}
 

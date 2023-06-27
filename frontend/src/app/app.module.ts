@@ -13,7 +13,7 @@ import { DescriptionComponent } from './components/pages/description/description
 import { ReadmeComponent } from './components/pages/readme/readme.component';
 import { AboutComponent } from './components/pages/about/about.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
-import { AddEditTaskComponent } from './components/pages/add-edit-task/add-edit-task.component';
+import { AddEditTaskComponent } from './components/pages/addedittask/addedittask.component';
 import { TasksComponent } from './components/pages/tasks/tasks.component';
 import { ProfileComponent } from './components/pages/profile/profile.component';
 import { RegisterComponent } from './components/pages/register/register.component';
