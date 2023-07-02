@@ -1,20 +1,36 @@
 <div class="content">
   <h1>📞 Contato</h1>
   <h2>Mande sua sugestao ou sua critica</h2>
-  <form (ngSubmit)="enviarMensagem()" #contatoForm="ngForm">
-    <label for="nome">Nome:</label>
-    <input type="text" id="nome" name="nome" [(ngModel)]="mensagem.nome" required>
-
-    <label for="email">E-mail:</label>
-    <input type="email" id="email" name="email" [(ngModel)]="mensagem.email" required>
-
-    <label for="assunto">Assunto:</label>
-    <input type="text" id="assunto" name="assunto" [(ngModel)]="mensagem.assunto" required>
-
-    <label for="mensagem">Mensagem:</label>
-    <textarea id="mensagem" name="mensagem" rows="4" [(ngModel)]="mensagem.texto" required></textarea>
-
-    <button class="btn-send" type="submit" [disabled]="contatoForm.invalid">Enviar</button>
+  <form (ngSubmit)="enviarMensagem()" #contatoForm="ngForm" class="form-horizontal">
+    <!-- NOME -->
+    <div class="col-sm-12">
+      <label for="nome" class="control-label">Nome:</label>
+    </div>
+    <div class="col-sm-12">
+      <input type="text" class="form-control" id="nome" name="nome" [(ngModel)]="mensagem.nome" required placeholder="Digite seu nome">
+    </div>
+    <!-- EMAIL -->
+    <div class="col-sm-12">
+      <label for="email" class="control-label">E-mail:</label>
+    </div>
+    <div class="col-sm-12">
+      <input type="email" class="form-control" id="email" name="email" [(ngModel)]="mensagem.email" required placeholder="Digite seu email">
+    </div>
+    <!-- ASSUNTO -->
+    <div class="col-sm-12">
+      <label for="assunto" class="control-label">Assunto:</label>
+    </div>
+    <div class="col-sm-12">
+      <input type="text" class="form-control" id="assunto" name="assunto" [(ngModel)]="mensagem.assunto" required placeholder="Digite um assunto">
+    </div>
+    <!-- MENSAGEM -->
+    <div class="col-sm-12">
+      <label for="mensagem" class="control-label">Mensagem:</label>
+    </div>
+    <div class="col-sm-12">
+      <textarea id="mensagem" class="form-control" name="mensagem" rows="4" [(ngModel)]="mensagem.texto" required placeholder="Digite sua mensagem aqui!"></textarea>
+    </div>
+    <button class="btn btn-primary" type="submit" [disabled]="contatoForm.invalid">Enviar</button>
   </form>
 
 </div>
