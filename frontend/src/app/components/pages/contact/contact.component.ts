@@ -16,6 +16,7 @@ export class ContactComponent {
   constructor(private http: HttpClient) {}
 
   enviarMensagem() {
+    console.log(this.mensagem)
     this.http.post('/enviar-email', this.mensagem)
       .subscribe(
         response => {

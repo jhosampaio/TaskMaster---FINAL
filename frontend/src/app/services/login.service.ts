@@ -1,18 +1,19 @@
 import { Injectable } from '@angular/core';
-import { IUserLogin } from '../shared/interfaces/IUserLogin';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { User } from '../shared/models/User';
 import { LOGIN_URL } from '../shared/constants/urls';
+import { ResponseLogin } from '../shared/models/ResponseLogin';
+import { RequestLogin } from '../shared/models/RequestLogin';
 
 @Injectable({
   providedIn: 'root'
 })
 export class LoginService {
 
-  constructor(private http:HttpClient) { }
+  constructor(
+    private http:HttpClient) { }
 
-  doLogin(userLogin:IUserLogin):Observable<User>{
-    return this.http.post<User>(LOGIN_URL, userLogin)
+  doLogin(requestLogin:RequestLogin):Observable<ResponseLogin>{
+    return this.http.post<ResponseLogin>(LOGIN_URL, requestLogin)
   }
 }
