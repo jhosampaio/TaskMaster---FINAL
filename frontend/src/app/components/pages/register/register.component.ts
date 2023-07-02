@@ -12,11 +12,7 @@ export class RegisterComponent {
   isSubmitted = false;
 
   constructor(
-    private formBuilder: FormBuilder
-    // private userService: UserService,
-    // private activatedRoute: ActivatedRoute,
-    // private router: Router
-  ) { }
+    private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
     this.registerForm = this.formBuilder.group({
@@ -28,26 +24,11 @@ export class RegisterComponent {
     });
   }
 
-  get fc() {
-    return this.registerForm.controls;
-  }
 
-  submit(){
-    this.isSubmitted = true;
-    if(this.registerForm.invalid) return;
+  onRegister(){
 
-    const fv= this.registerForm.value;
-    // const user :IUserRegister = {
-    //   name: fv.name,
-    //   email: fv.email,
-    //   password: fv.password,
-    //   confirmPassword: fv.confirmPassword,
-    //   address: fv.address
-    // };
-
-    // this.userService.register(user).subscribe(_ => {
-    //   this.router.navigateByUrl(this.returnUrl);
-    // })
   }
 
 }
+
+
