@@ -1,16 +1,55 @@
-<ul>
-  <li *ngFor="let task of tasks">
-    <a routerLink="/task/{{task.id}}">
-      <div class="content">
-        <div class="name">
-          {{task.name}}
-        </div>
-        <div class="status">
-          <span>
-            ◘ Status: {{task.descricao}}
-          </span>
-        </div>
-      </div>
-    </a>
-  </li>
-</ul>
+<div class="container">
+<div class="card mt-3">
+  <div class="card-header">
+    <div class="float-left">
+      <h4>Tarefas</h4>
+    </div>
+    <div class="float-right">
+      <button type="button" class="btn btn-primary" routerLink="add-edit">Nova Tarefa</button>
+      <button type="button" class="btn btn-secondary">Atualizar</button>
+    </div>
+  </div>
+  <div class="card-body">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Tarefa</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>
+            <span class="float-right">
+              <button class="btn btn-outline-warning mb-1 btn-sm">
+                Atualizar
+              </button>
+
+              <button class="btn btn-outline-danger mb-1 btn-sm" >
+                Remover
+              </button>
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <ng-template #loading>
+      <span>Carregando Cursos...</span>
+    </ng-template>
+
+
+  </div>
+</div>
+
+<ng-template #deleteModal>
+  <div class="modal-body text-center">
+    <p>Tem certeza que deseja remover esse curso?</p>
+    <button type="button" class="btn btn-default">Sim</button>
+    <button type="button" class="btn btn-primary">Nao</button>
+  </div>
+</ng-template>
+</div>

@@ -15,14 +15,8 @@ export class InfoService {
 
   constructor(private http: HttpClient) { }
 
-  httpOptions = {
-    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
-  }
-  getHome(): Observable<Home> {
-    return this.http.get<Home>(HOME_URL)
-      .pipe(
-        retry(2))
-
+  getAll2(): Observable<Info[]> {
+    return this.http.get<Info[]>(HOME_URL);
   }
   getAll():Info[]{
     return sample_infos;

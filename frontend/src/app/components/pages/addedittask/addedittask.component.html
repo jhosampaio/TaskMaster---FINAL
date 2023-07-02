@@ -1,20 +1,22 @@
 <div class="content">
-  <div class="details">
-    <h1>➡️ Adicionar/Editar</h1>
-    <form  #contatoForm="ngForm">
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome"  required>
-
-      <label for="desc">Descricao:</label>
-      <input type="phone" id="phone" name="phone"  required>
-
-      <button class="btn-send" type="submit" [disabled]="contatoForm.invalid">Add/Edit</button>
-
-    </form>
-    <div class="btns">
-      <button class="btn-remove" type="submit" [disabled]="contatoForm.invalid">Remover</button>
+  <h1>➡️ Adicionar/Editar</h1>
+  <form class="form-horizontal" #taskForm="ngForm">
+    <div class="col-sm-12">
+      <label for="nomeTarefa" class="control-label">Tarefa:</label>
     </div>
-    <div class="btns">
-      <a class="btn-tasks" routerLink="/tasks">Tarefas</a>
-  </div>
+    <div class="col-sm-12">
+      <input type="text" class="form-control"  name="nomeTarefa" placeholder="Digite o nome da tarefa" required>
+    </div>
+
+    <div class="col-sm-12">
+      <label for="descricao" class="control-label">Descrição:</label>
+    </div>
+    <div class="col-sm-12">
+      <input type="text" class="form-control"  name="descricao" placeholder="Digite a Descrição da Tarefa" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="taskForm.invalid">Salvar/Editar</button>
+  </form>
+  <button type="submit" class="btn btn-primary" routerLink="/tasks">Tarefas</button>
 </div>
+

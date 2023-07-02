@@ -19,8 +19,8 @@ const routes: Routes = [
   {path: 'description', component: DescriptionComponent},
   {path: 'readme', component: ReadmeComponent},
   {path: 'tasks', component: TasksComponent},
-  {path: 'task/:id', component: TaskPageComponent},
-  {path: 'add-edit', component: AddEditTaskComponent},
+  {path: 'tasks/task/:id', component: TaskPageComponent},
+  {path: 'tasks/add-edit', component: AddEditTaskComponent},
   {path: 'login', component: LoginComponent},
   {path: 'profile', component: ProfileComponent},
   {path: 'register', component: RegisterComponent}
