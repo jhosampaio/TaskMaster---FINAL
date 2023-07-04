@@ -1,18 +1,14 @@
 const express = require('express')
 const cors = require('cors')
-const exphbs = require('express-handlebars')
 require('dotenv').config()
 const UserRoutes = require('./routes/UserRoutes')
+const TasksRoutes = require('./routes/TasksRoutes')
 const OutherRoutes = require('./routes/OutherRoutes')
 
 const app = express()
 
 // Config JSON response
 app.use(express.json())
-
-// Views
-app.engine('handlebars', exphbs.engine())
-app.set('view engine','handlebars')
 
 // Solve CORS
 app.use(cors({
@@ -29,6 +25,7 @@ app.get('/', (req, res) => {
   });
 app.use('/master', OutherRoutes)
 app.use('/users', UserRoutes)
+app.use('/tasks', TasksRoutes)
 
 // Servidor
 const port = process.env.PORT || 3333;;
