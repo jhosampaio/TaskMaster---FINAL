@@ -1,5 +1,8 @@
 import { Component, OnInit} from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { RegisterService } from 'src/app/services/register.service';
+import { AlertService } from 'src/app/services/alert.service';
+import { RequestResister } from 'src/app/shared/models/RequestRegister';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -8,27 +11,28 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent {
-  registerForm!: FormGroup;
-  isSubmitted = false;
+
+  requestRegister!: RequestResister;
 
   constructor(
-    private formBuilder: FormBuilder) { }
+    private registerService: RegisterService,
+    private alertService: AlertService,
+    private router: Router) { }
 
   ngOnInit(): void {
-    this.registerForm = this.formBuilder.group({
-      name: ['', [Validators.required, Validators.minLength(5)]],
-      email: ['', [Validators.required, Validators.email]],
-      password: ['', [Validators.required, Validators.minLength(5)]],
-      confirmPassword: ['', Validators.required],
-      address: ['', [Validators.required, Validators.minLength(10)]]
+    this.requestRegister = new RequestResister();
+  }
+
+
+  onRegister() : void {
+    this.registerService.goRegister(this.requestRegister).subscribe(data => {
+      this.alertService.sucess("Registro eventuado com sucesso!");
+      this.router.navigate(['login']);
+    },
+    error => {
+      this.alertService.error(error.error.message);
     });
   }
-
-
-  onRegister(){
-
-  }
-
 }
 
 
