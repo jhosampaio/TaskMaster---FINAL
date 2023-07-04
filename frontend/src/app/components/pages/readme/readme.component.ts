@@ -21,15 +21,15 @@ export class ReadmeComponent {
 
 
     ngOnInit() {
-      this.http.get<string[]>('/tecnologias')
-        .subscribe(
-          tecnologias => {
-            this.tecnologias = tecnologias;
-          },
-          error => {
-            console.error('Erro:', error);
-          }
-        );
+      // this.http.get<string[]>('/tecnologias')
+      //   .subscribe(
+      //     tecnologias => {
+      //       this.tecnologias = tecnologias;
+      //     },
+      //     error => {
+      //       console.error('Erro:', error);
+      //     }
+      //   );
     }
 
 }
