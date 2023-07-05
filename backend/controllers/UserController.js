@@ -98,6 +98,8 @@ module.exports = class UserController {
         res.status(422).json({ message: "Senha invalida" });
       return;
     }
+    user.contador += 1;
+    await user.save();
 
     await createUserToken(user, req, res);      
   }

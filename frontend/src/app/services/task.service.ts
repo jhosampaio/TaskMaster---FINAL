@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { Task } from '../shared/models/Task';
 import { sample_tasks } from 'src/data';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TaskService {
 
-  //constructor(private http.HttpClient) { }
+  constructor(private http:HttpClient) { }
 
   getAll():Task[]{
     return sample_tasks;

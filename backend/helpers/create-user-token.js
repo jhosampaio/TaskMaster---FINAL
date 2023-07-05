@@ -6,8 +6,8 @@ const createUserToken = async (user, req, res)=> {
         name: user.name,
         id: user._id
     }, process.env.MY_SECRET)
-    // Retornando token
-    res.status(200).json({message: "Voce esta logado", token: token, userId: user._id,})
+   
+    res.status(200).json({message: "Login Efetuado com sucesso", token: token, userId: user._id,})
 
 }
 

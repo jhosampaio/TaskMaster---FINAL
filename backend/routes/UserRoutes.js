@@ -1,5 +1,6 @@
 const router = require('express').Router()
 const UserController = require('../controllers/UserController')
+const User = require('../models/User')
 
 const verifyToken = require('../helpers/verify-token')
 

@@ -16,15 +16,18 @@ export class ContactComponent {
     texto: ''
   };
   router: any;
-  constructor(private http: HttpClient) {}
+  constructor(
+    private http: HttpClient,
+    private alertService: AlertService) {}
 
   enviarMensagem() {
     console.log(this.mensagem)
     this.http.post(SEND_EMAIL, this.mensagem)
       .subscribe(
         response => {
-          this.router.navigate(['tasks']);
           console.log('Mensagem enviada com sucesso!', response);
+          this.alertService.sucess("Registro eventuado com sucesso!");
+          this.router.navigate(['home']);
 
         },
         error => {
